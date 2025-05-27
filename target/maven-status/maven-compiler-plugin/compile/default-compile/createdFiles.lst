@@ -1,0 +1,4 @@
+pages\DashboardPage.class
+pages\BasePage.class
+pages\LoginPage.class
+factory\DriverFactory.class

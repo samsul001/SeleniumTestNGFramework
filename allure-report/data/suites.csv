@@ -1,0 +1,4 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"Ensure login works with correct username and password","5708","Valid login with username and password","Suite","Mon May 26 08:38:52 IST 2025","passed","Mon May 26 08:38:58 IST 2025","tests.ValidLogin","Test","tests.ValidLogin","loginTest"
+"Ensure login is not working with incorrect username or password","311","Failure login with invalid username and password","Suite","Mon May 26 08:38:41 IST 2025","broken","Mon May 26 08:38:41 IST 2025","tests.InvalidLogin","Test","tests.InvalidLogin","loginTestFailure"
+"Ensure login works with correct username and password","3616","Valid login with username and password","Suite","Mon May 26 08:19:07 IST 2025","passed","Mon May 26 08:19:10 IST 2025","tests.LoginTest","Test","tests.LoginTest","loginTest"

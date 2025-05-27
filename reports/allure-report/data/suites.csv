@@ -1,0 +1,5 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","1","loginTest","Suite","Tue May 20 01:24:49 IST 2025","skipped","Tue May 20 01:24:49 IST 2025","tests.LoginTest","Test","tests.LoginTest","loginTest"
+"","3266","test","Suite","Mon May 19 19:19:29 IST 2025","passed","Mon May 19 19:19:32 IST 2025","base.TestBase","Test","base.TestBase","test"
+"","2","setup","Suite","Tue May 20 01:24:48 IST 2025","broken","Tue May 20 01:24:48 IST 2025","tests.LoginTest","Test","tests.LoginTest","setup"
+"Ensure login works with correct username and password","4290","Valid login with username and password","Suite","Thu May 22 04:43:08 IST 2025","passed","Thu May 22 04:43:12 IST 2025","tests.LoginTest","Test","tests.LoginTest","loginTest"
