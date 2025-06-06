@@ -1,4 +1,4 @@
-pages\DashboardPage.class
 pages\BasePage.class
 pages\LoginPage.class
+pages\DashboardPage.class
 factory\DriverFactory.class

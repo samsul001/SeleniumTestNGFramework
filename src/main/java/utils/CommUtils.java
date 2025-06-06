@@ -55,7 +55,7 @@ import ru.yandex.qatools.ashot.comparison.ImageDiffer;
 
 public class CommUtils {
 	
-//	allure generate target/allure-results --clean -o allure-report
+//	allure generate allure-results --clean -o allure-report
 //	allure open allure-report
 	
 	//---------------------------WebElement actions------------------------------------------------------------------------

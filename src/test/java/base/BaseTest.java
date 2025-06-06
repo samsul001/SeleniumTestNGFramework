@@ -7,6 +7,7 @@ import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 
 import factory.DriverFactory;
+import utils.AssertUtils;
 import utils.CommUtils;
 import utils.ReadConfig;
 
@@ -15,12 +16,12 @@ public abstract class BaseTest {
 	
 	//protected Properties pro;
 	
-	ReadConfig readConfig = new ReadConfig();	
-	public String baseUrl = readConfig.getUrl();
-	public String userName = readConfig.getUsername();
-	public String pwd = readConfig.getPassword();
-	public String invalidUsername = readConfig.getInvalidUsername();
-	public String invalidPassword = readConfig.getInvalidPassword();
+	//static ReadConfig readConfig = new ReadConfig();	
+	public String baseUrl = ReadConfig.getUrl();
+	public String userName = ReadConfig.getUsername();
+	public String pwd = ReadConfig.getPassword();
+	public String invalidUsername = ReadConfig.getInvalidUsername();
+	public String invalidPassword = ReadConfig.getInvalidPassword();
 	
 	@Parameters("browser")
 	@BeforeClass
@@ -30,6 +31,7 @@ public abstract class BaseTest {
 		driver.get(baseUrl);
 		//Thread.sleep(8000);
 		CommUtils.waitForPageLoad(20);
+		AssertUtils.initSoftAssert();
 	}
 	
 	@AfterClass

@@ -4,12 +4,12 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.util.Properties;
 
-public class ReadConfig {
+public final class ReadConfig {
 	
 	private static Properties pro;
 	private static String path;
 		
-	public ReadConfig() {
+	static {
 		try {
 			File src = new File("./src/test/resources/config.properties");
 			FileInputStream fis = new FileInputStream(src);
@@ -20,8 +20,12 @@ public class ReadConfig {
 		}
 	}
 	
+	private ReadConfig() {
+		
+	}
+	
 	public static String getUrl() {
-		String url = pro.getProperty("baseUrl");
+		String url = pro.getProperty("baseURL");
 		return url;
 	}
 	
