@@ -10,6 +10,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.URL;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.time.Duration;
 import java.util.ArrayList;
@@ -24,6 +26,8 @@ import javax.imageio.ImageIO;
 
 import org.apache.commons.codec.binary.Base64;
 import org.apache.commons.io.FileUtils;
+import org.json.JSONArray;
+import org.json.JSONObject;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Cookie;
@@ -57,6 +61,20 @@ public class CommUtils {
 	
 //	allure generate allure-results --clean -o allure-report
 //	allure open allure-report
+	
+	//--------------------------JSON Reader Util---------------------------------------------------------------------------
+	//--------------------------Author : Samsul Alam ----------------------------------------------------------------------
+	
+	
+	
+	public static String getString(JSONObject obj, String value) {
+		return obj.getString(value);
+	}
+	
+	public static String getJSONObject(JSONObject obj, String childObject, String value) {
+		return obj.getJSONObject(childObject).getString(value);
+	}
+	
 	
 	//---------------------------WebElement actions------------------------------------------------------------------------
 	//-----------------------------Author: Samsul -------------------------------------------------------------------------

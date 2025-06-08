@@ -46,6 +46,12 @@ public final class ReadConfig {
 		return filePath;
 	}
 	
+	public static String getJSONFilePath() {
+		path = System.getProperty("user.dir");
+		String filepath = path.concat(pro.getProperty("jsonPath"));
+		return filepath;
+	}
+	
 	public static String getInvalidUsername() {
 		String invalidusername = pro.getProperty("invalidUsername");
 		return invalidusername;

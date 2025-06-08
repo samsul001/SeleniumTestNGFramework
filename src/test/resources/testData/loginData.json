@@ -1,4 +1,28 @@
 [
-  { "username": "Admin", "password": "admin123", "expected": "pass" },
-  { "username": "Admin", "password": "wrong",   "expected": "fail" }
+  {
+    "id": "1",
+    "name": "Test Case 1",
+    "tags": ["smoke", "regression"],    // Array inside Object
+    "steps": [
+      {
+        "stepNumber": 1,
+        "actions": ["click", "type"]    // Array inside Object inside Array
+      },
+      {
+        "stepNumber": 2,
+        "actions": ["verify"]
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Test Case 2",
+    "tags": ["sanity"],
+    "steps": [
+      {
+        "stepNumber": 1,
+        "actions": ["open", "login"]
+      }
+    ]
+  }
 ]
